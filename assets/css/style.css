@@ -1,7 +1,172 @@
+:root {
+    --headerBannerColor: rgb(10, 243, 212);
+    --fontStyle: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --pageColor1: blue;
+    --pageColor2: red;
+}
+
 * {
-    background-color: aqua;
+    background-color: rgb(251, 253, 253);
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--headerBannerColor);
+}
+
+.introduction img {
+    height: 300px;
+    width: 300px;
+}
+
+.bannercolor {
+    background-color: var(--headerBannerColor);
+}
+
+.headerBox {
+    margin: 10px;
+    color: blueviolet;
+    background-color: var(--headerBannerColor);
+}
+
+.headerBox h1 {
+    background-color: var(--headerBannerColor);
+}
+
+.headerBoxLinks {
+    margin-top: 50px;
+    background-color: var(--headerBannerColor);
+}
+
+.headerBoxLinks ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--headerBannerColor);
+}
+
+.headerBoxLinks ul li {
+    margin: 20px;
+    background-color: var(--headerBannerColor);
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+.headerBoxLinks ul li:hover {
+    opacity: 1.0;
+}
+
+.headerBoxLinks ul li p {
+    background-color: var(--headerBannerColor);
+}
+
+.headerBoxLink ul li p:hover {
+    color: blue;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolioLinksIntro {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: chartreuse;
+}
+
+.portfolioLinks {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-flow: row wrap;
+    background-color: cornflowerblue;
+    border: 20px;
+    border-color: aquamarine;
+}
+
+.portfolioLink {
+    opacity: .5;
+    display: flex;
+    align-content: space-around;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 20px solid black;
+    transition: opacity 1s, border 1s;
+}
+
+.portfolioLink:hover {
+    opacity: 1.0;
+    border: 20px solid whitesmoke;
 }
 
 p {
     color: darkmagenta;
+    display: flex;
+    justify-content: flex-start;
 }
+
+footer {
+    background-color: var(--headerBannerColor);
+}
+
+footer h2 {
+    background-color: transparent;
+}
+
+footer nav {
+    background-color: transparent;
+}
+
+footer nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;    
+}
+
+.footerLinks {
+    margin: 20px;
+    background-color: transparent;
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+.footerLinks:hover {
+    opacity: 1.0;
+}
+
+.footerLinks p {
+    background-color: transparent;
+}
+
+@media(min-width:1300px) {
+    .portfolioLinks {
+        padding: 50px;
+    }
+}
+
+@media(max-width:1000px) {
+    .portfolioLinks {
+        background-color: var(--pageColor1);
+    }
+
+@media(max-width:800px) {
+    * {
+        background-color: var(--pageColor2);
+    }
+    p {
+        background-color: var(--pageColor2);
+    }
+    body {
+        background-color: var(--pageColor2);
+    }
+}   
