@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="headerBox">
@@ -15,65 +17,71 @@
         <nav class="headerBoxLinks">
             <ul>
                 <li>
-                    <p>About</p>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <p>Work</p>
+                    <a href="#work">Work</a>
                 </li>
                 <li>
-                    <p>Contact</p>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <div class="introduction">
-        <img src="./assets/images/portfolioPhoto.jpg" alt="placeholder image">
+        <img src="./assets/images/portfolioPhoto.jpg" alt="placeholder image" style="width: 500px; height: 500px;">
     </div>
-    <p class="introduction">"Hello! It's nice to meet you!"</p>
+    <p class="introduction" id="about">"Hello! It's nice to meet you!"</p>
     <p class="introduction">"My name is Jennifer and I'm excited to share my cool past projects with you!</p>
 
-    <h2 class="portfolioLinksIntro">View my work!</h2>
-        <div class = "portfolioLinks">
-            <div class = "portfolioLink">
-                <img src="https://via.placeholder.com/300" alt="placeholder image">
-            </div>
-
-            <div class = "portfolioLink">
-                <img src="https://via.placeholder.com/300" alt="placeholder image">
-            </div>
-
-            <div class = "portfolioLink">
-                <img src="https://via.placeholder.com/300" alt="placeholder image">
-            </div>
-
-            <div class = "portfolioLink">
-                <img src="https://via.placeholder.com/300" alt="placeholder image">
-            </div>
-
-            <div class = "portfolioLink">
-                <img src="https://via.placeholder.com/300" alt="placeholder image">
-            </div>
-
-            <div class = "portfolioLink">
-                <img src="https://via.placeholder.com/300" alt="placeholder image">
-            </div>
+    <h2 id="work">View my work!</h2>
+    <div class="portfolioLinks">
+        <div class="portfolioLink">
+            <a href="https://jschmiett.github.io/KnowBeforeYouGo/">
+                <img src="./assets/images/KnowBeforeYouGo.png" alt="KnowBeforeYouGo Link"
+                    style="width:300px; height:300px">
+            </a>
         </div>
+
+        <div class="portfolioLink">
+            <a href="https://arcane-harbor-36381.herokuapp.com/">
+                <img src="./assets/images/bibliotecha.png" alt="placeholder image" style="width:300px; height:300px">
+            </a>
+        </div>
+
+        <div class="portfolioLink">
+            <img src="https://via.placeholder.com/300" alt="placeholder image">
+        </div>
+
+        <div class="portfolioLink">
+            <img src="https://via.placeholder.com/300" alt="placeholder image">
+        </div>
+
+        <div class="portfolioLink">
+            <img src="https://via.placeholder.com/300" alt="placeholder image">
+        </div>
+
+        <div class="portfolioLink">
+            <img src="https://via.placeholder.com/300" alt="placeholder image">
+        </div>
+    </div>
     <footer>
-        <h2>I'd love to hear from you. Contact me here:</h2>
+        <h2 id="contact">I'd love to hear from you. Contact me here:</h2>
         <nav>
             <ul>
                 <li class="footerLinks">
-                    <p>Email</p>
+                    <a href="mailto:bailliejm@gmail.com">Email</a>
                 </li>
                 <li class="footerLinks">
-                    <p>LinkedIn</p>
+                    <a href="https://www.linkedin.com/in/jennifer-schmiett/">LinkedIn</a>
                 </li>
                 <li class="footerLinks">
-                    <p>GitHub</p>
+                    <a href="https://github.com/jschmiett">GitHub</a>
                 </li>
             </ul>
         </nav>
-    </footer>        
+    </footer>
 </body>
+
 </html>
