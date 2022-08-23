@@ -1,8 +1,30 @@
-# Week2Portfolio
 
-A website I can use to introduce myself to a prospective employer that contains links to portfolio projects, a link to my GitHub, a link to my LinkedIn, and a hyperlink they can use to send me email. 
+# 02 Advanced CSS: Portfolio
 
-Porfolio Projects:
+## User Story
+
+```
+AS AN employer
+I WANT to view a potential employee's deployed portfolio of work samples
+SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
+```
+
+## Acceptance Criteria
+GIVEN I need to sample a potential employee's previous work
+WHEN I load their portfolio
+THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
+WHEN I click one of the links in the navigation
+THEN the UI scrolls to the corresponding section
+WHEN I click on the link to the section about their work
+THEN the UI scrolls to a section with titled images of the developer's applications
+WHEN I am presented with the developer's first application
+THEN that application's image should be larger in size than the others
+WHEN I click on the images of the applications
+THEN I am taken to that deployed application
+WHEN I resize the page or view the site on various screens and devices
+THEN I am presented with a responsive layout that adapts to my viewport
+
+## Porfolio Projects:
 
 Group Project#1 Know Before You Go
 A preliminary travel research app that provides the air quality, currency, and exchange rate for any foreign city.
@@ -14,3 +36,7 @@ An app that stores a "To Read" list and a user's reviews of books they have read
 •   Role: Set up Seeds.
 •	Tools: Javascript, SQL, Node
 
+Group Project#3 Classifieds
+An app that provides a social platform where users can post, edit, and delete their own ads and can view ads from other users.
+•   Role: React NavTabs and framework. Set up log-in Route.
+•	Tools: Javascript, React
