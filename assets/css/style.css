@@ -7,13 +7,15 @@
 
 * {
     background-color: rgb(251, 253, 253);
+    text-decoration: none;
+    list-style-type: none;
 }
 
 header {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: var(--headerBannerColor);
 }
 
@@ -42,7 +44,7 @@ header {
 }
 
 .headerBoxLinks ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     background-color: var(--headerBannerColor);
@@ -51,20 +53,22 @@ header {
 .headerBoxLinks ul li {
     margin: 20px;
     background-color: var(--headerBannerColor);
-    opacity: .5;
+    opacity: .8;
     transition: opacity 1s;
 }
 
 .headerBoxLinks ul li:hover {
     opacity: 1.0;
-}
-
-.headerBoxLinks ul li p {
     background-color: var(--headerBannerColor);
 }
 
-.headerBoxLink ul li p:hover {
+.headerBoxLinks ul li a {
+    background-color: var(--headerBannerColor);
+}
+
+.headerBoxLink ul li a:hover {
     color: blue;
+    background-color: var(--headerBannerColor);
 }
 
 .introduction {
@@ -95,6 +99,7 @@ header {
     opacity: .5;
     display: flex;
     align-content: space-around;
+    flex-direction: column;
     border-radius: 20px;
     margin: auto;
     margin-top: 20px;
@@ -106,6 +111,11 @@ header {
 .portfolioLink:hover {
     opacity: 1.0;
     border: 20px solid whitesmoke;
+}
+
+.portfolioTitleDiv {
+    display: flex;
+    flex-direction: row;
 }
 
 p {
@@ -127,10 +137,10 @@ footer nav {
 }
 
 footer nav ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: transparent;    
+    background-color: transparent;
 }
 
 .footerLinks {
@@ -159,14 +169,16 @@ footer nav ul {
         background-color: var(--pageColor1);
     }
 
-@media(max-width:800px) {
-    * {
-        background-color: var(--pageColor2);
+    @media(max-width:800px) {
+        * {
+            background-color: var(--pageColor2);
+        }
+
+        p {
+            background-color: var(--pageColor2);
+        }
+
+        body {
+            background-color: var(--pageColor2);
+        }
     }
-    p {
-        background-color: var(--pageColor2);
-    }
-    body {
-        background-color: var(--pageColor2);
-    }
-}   
