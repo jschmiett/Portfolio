@@ -12,6 +12,10 @@
     list-style-type: none;
 }
 
+h2 {
+    text-align: center;
+}
+
 header {
     /* color: black; */
     display: flex;
@@ -21,10 +25,17 @@ header {
     background-color: var(--headerBannerColor);
 }
 
+.introduction {
+    text-align: center;
+    margin: 50px;
+}
+
 .introduction img {
     height: 300px;
     width: 300px;
 }
+
+
 
 .bannercolor {
     background-color: var(--headerBannerColor);
@@ -144,7 +155,7 @@ footer nav {
 footer nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: var(--headerBannerColor);
 }
 
