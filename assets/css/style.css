@@ -26,8 +26,14 @@ header {
 }
 
 .introduction {
+
     text-align: center;
     margin: 50px;
+    background-color: rgb(215, 215, 215);
+}
+
+.introduction-body {
+    background-color: rgb(215, 215, 215);
 }
 
 .introduction img {
@@ -92,6 +98,10 @@ header {
     margin-bottom: 20px;
 }
 
+
+
+
+
 .portfolioLinksIntro {
     display: flex;
     justify-content: center;
@@ -99,6 +109,7 @@ header {
 }
 
 .portfolioLinks {
+    background-color: rgb(171, 171, 171);
     display: flex;
     justify-content: center;
     align-content: space-around;
